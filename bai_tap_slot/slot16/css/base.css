@@ -26,7 +26,7 @@ h1 {
   width: 200px;
   height: 100px;
   margin: 40px auto 40px auto;
-  background-image: url('/bai_tap_slot/slot15/img/logo.png');
+  background-image: url('../img/logo.png');
   background-repeat: no-repeat;
   text-indent: 100%;
   white-space: nowrap;
