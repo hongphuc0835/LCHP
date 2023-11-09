@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+   
+       <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="image"></div>
+            <div class="text">Start for free & get <br />attractive offers today !
+            </div>
+        </div>
+        <form action="#" id="form" method="post">
+            <div>
+                <div class="social">
+                    <div class="title">Get Started</div>
+                    <div class="question">
+                        Alteady Have an account?<br />
+                        <span>Sign In</span>
+                    </div>
+                    <div class="btn">
+                        <div class="btn-1">
+                            <img width="48" height="48" src="https://img.icons8.com/fluency/48/google-logo.png" alt="google-logo"/>
+                            Sign Up
+                        </div>
+                        <div class="btn-2">
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+                            Sign Up
+                        </div>
+                    </div>
+                </div>
+                <div class="or">Or</div>
+            </div>
+            <div>
+                <label for="username">Username</label>
+                <i class="far fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="James Bond">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="email"> Email</label>
+                <i class="far fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="abc@gmail.com">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="password">
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+            <button id="btn" type="submit">submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

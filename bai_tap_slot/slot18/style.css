@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #c8564c;
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+    
+}
+.images {
+    background-image: url("images/illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*boder: 5px solid back;*/
+    height: 65%;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-size:18px ;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    padding: 50px;
+    /* box-shadow: ; */
+    
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+form div input{
+    width: 100%;
+    height: 40px;
+    border-radius:7px ;
+    outline: none;
+    padding: 8px;
+    /* box-shadow: */
+}
+::placeholder{
+    padding:20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    
+}
+form div{
+    position: relative;
+    margin-bottom: 10px;
+
+}
+input:focus{
+   border: 2px solid #c8564c;
+}
+.or{
+    text-align: center;
+}
+.question{
+    font-size: 15px;
+}
+span {
+    color: #f2796e;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    
+}
+button{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #f2796e;
+    border: 2px solid #f2796e;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow:2px 2px 4px rgba(red, rgb(0, 185, 0), blue, 0.3);
+    transition: all 0.1s ease;
+}
+button:hover{
+    opacity: 0.9;
+}
+.btn-1,.btn-2{
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    gap: 15px;
+    justify-items: center;
+    border: 2px solid #c4c4c4;
+    border-radius: 7px;
+}
+
+form div i{
+    position: absolute;
+    padding: 10px;
+
+}
+
+.success-icon,
+.failure-icon{
+    right: 0;
+    opacity: 0;
+}
+
+.failure-icon,
+.error {
+    color: red;
+}
+.success-icon {
+    color: green;
+}
+.error {
+    font-size: 14.5px;
+    margin-top: 5px;
+}
+
+.btn-2{
+    background-color: #039BE5
+}
+/* responsive web design */
+/* Media Queries */
+/* ho tro da man hinh */
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+    .images{
+        height: 70vh;
+
+    }
+    form,.content{
+        width: 100%;
+    }
+    .btn{
+        flex-direction: column;
+
+    }
+}
+@media(max-width:425px){
+    form{
+        padding: 20px;
+    }
+}
